@@ -12,31 +12,34 @@ body * {
     display: inline-block;
     width: 90vmin;
     height: 90vmin;
-    border: 1vmin solid #ccc;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 1vmin solid #013842;
+    /* background-color: yellow; */
 }
     .chessboard > .row {
         display: inline-block;
-        width: 50%;
+        width: 100%;
         height: 50%;
         float: left;
-/*        background: red;*/
     }
 
-        .chessboard > .row > .cell {
-            display: inline-block;
-            width: 12.5%;
-            height: 100%;
-            float: left;
-            background-color: yellow;
+      .chessboard > .row > .cell {
+          display: inline-block;
+          width: 50%;
+          height: 100%;
+          float: left;
+      }
+        .chessboard > .row > .cell.red {
+            background-color: #AF1B0B;
         }
-.chessboard > .row > .cell-white {
-    background-color: white;
-}
 
-.chessboard > .row > .cell-black {
-    background-color: black;
-}
+        .chessboard > .row > .cell.green {
+            background-color: #68A20A;
+        }
+
+        .chessboard > .row > .cell.blue {
+            background-color: #095C6C;
+        }
