@@ -1,0 +1,42 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    word-break: break-all;
+}
+
+.chessboard {
+    display: inline-block;
+    width: 90vmin;
+    height: 90vmin;
+    border: 1vmin solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    .chessboard > .row {
+        display: inline-block;
+        width: 50%;
+        height: 50%;
+        float: left;
+/*        background: red;*/
+    }
+
+        .chessboard > .row > .cell {
+            display: inline-block;
+            width: 12.5%;
+            height: 100%;
+            float: left;
+            background-color: yellow;
+        }
+.chessboard > .row > .cell-white {
+    background-color: white;
+}
+
+.chessboard > .row > .cell-black {
+    background-color: black;
+}
